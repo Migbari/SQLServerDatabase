@@ -32,7 +32,11 @@ CREATE TABLE trabalho(
 /*Incluir nova coluna*/
 ALTER TABLE materia ADD Teste VARCHAR (2);
 
-/*Excluir coluna*/
-ALTER TABLE materia DROP COLUMN Teste;
+	/*Excluir coluna*/
+	ALTER TABLE materia DROP COLUMN Teste;
 
 
+/*Efetuando update*/
+UPDATE DEPARTAMENTO
+SET NOME = "HELBERT CARVALHO", SALARIO = 1000
+WHERE CODIGO = 1
